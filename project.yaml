@@ -1,0 +1,62 @@
+basic:
+    name: Orl
+    environments:
+        production: 'https://www.orlikowscy.com.pl/'
+        staging: ''
+        development: ''
+    breakpoints:
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /
+        - o-nas
+        - oferta
+        - oferta/blachy-blachodachowki
+        - oferta/gonty-papowe
+        - oferta/membrany-dachowe
+        - oferta/podbitka-dachowa
+        - oferta/akcesoria-dachowe
+        - oferta/wpusty-dachowe
+        - oferta/okna-dachowe
+        - oferta/papy
+        - oferta/schody-strychowe
+        - oferta/rynny-pcv-metalowe-systemy
+        - oferta/dachowki
+        - realizacje
+        - nowosci
+        - promocje
+        - blog
+        - kontakt
+        - kontakt/formularz-kontaktowy
+        - oferta/sztachety
+        - blog/po-co-stosuje-sie-tzw-grzebien-okapu
+        - blog/dach-pokryty-gontem-bitumicznym-najwazniejsze-zalety
+        - blog/kolce-na-ptaki-a-przepisy-prawa-czy-to-legalne
+        - polityka-prywatnosci
+        - polityka-cookies
+    monitoring:
+        days: [Mon]
+        type: weekly
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 15
+    scroll: true
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
